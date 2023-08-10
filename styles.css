@@ -39,6 +39,7 @@ img {
 }
 .body p:last-of-type {
     margin-bottom: 1.563rem;   
+    line-height: 1.438rem;
 }
 .body h2 {
     font-family: Fraunces;
@@ -46,10 +47,45 @@ img {
     font-size: 1.875rem;
     margin-bottom: 0.938rem;
 }
-
+.body div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.body div span:first-of-type {
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces;
+    font-size: xx-large;
+}
+.body div span:last-of-type {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+.footer button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    margin-bottom: 20px;
+    height: 45px;
+    border-radius: 10px;
+}
+.footer button span:first-child {
+    margin-right: 10px;
+}
+.footer button span:last-child {
+    position: relative;
+    bottom: 10%;
+}
 .attribution { 
-    position: absolute;
-    top: 80%;
+    position: fixed;
+    bottom: 0;
     left: 15%;
     font-size: 11px; 
     text-align: center; 
